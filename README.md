@@ -1,1 +1,11 @@
-# web-scraping
+Packages needed for this repo are beautfiulsoup from bs4, 
+Using beautifulsoup to perform different search functionanlities on the html we pulled from the get request.
+
+soup.find_all is a function of beautiful soup that searches through the entire html file for the 2 arguments: tag name and class, 
+returning all data with those parameters.
+We can use attrs= for special cases in which there are no class for the data item, but a custom name.
+
+With the function: 'for x in y:
+    print(x.text)', for each item in the y we print the text only.
+We create an empty list Var [], and at the end of the prior function do 
+an .append() to put all the clean info into the list.
