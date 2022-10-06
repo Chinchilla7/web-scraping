@@ -13,6 +13,7 @@ descriptions = soup.find_all('h2', class_='Title_title__J34jc')
 
 #will contain info parsed from html
 item_names = []
+
 for i in descriptions:
     print (i.text)
     items = i.text
@@ -25,22 +26,8 @@ for i in descriptions:
     item_names.append(items)
 
 len(item_names)
-
-
-# get the programming language from each repo
-# use attrs for items with no class
-p_langauge = soup.find_all('span',attrs={'itemprop': 'programmingLanguage'})
-# for each item in p_langauge, print the text
-for item in p_langauge:
-    print(item.text)
-    da = item.text
+item_names
     
-
-
-# get the div that contains data-hpc
-articles = soup.find_all(attrs={"data-hpc":True})  ## way one 
-articles = soup.find_all('div',attrs={'data-hpc':True}) ## way two 
-
 
 ## put this together into a dataframe
 df = pd.DataFrame({'medicine_names':item_names})
