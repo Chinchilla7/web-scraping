@@ -32,5 +32,5 @@ item_names
 ## put this together into a dataframe
 df = pd.DataFrame({'medicine_names':item_names})
 
-df.to_csv()
+df.to_csv('data/medicine_list')
 
