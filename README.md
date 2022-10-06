@@ -1,6 +1,6 @@
 Packages needed for this repo are beautfiulsoup from bs4, pandas, and requests.
 
-Using beautifulsoup to perform different search functionanlities on the html we pulled from the get request.
+Using beautifulsoup to perform different search functionalities on the html we pulled from the get request.
 
 soup.find_all is a function of beautiful soup that searches through the entire html file for the 2 arguments: tag name and class, 
 returning all data with those parameters.
