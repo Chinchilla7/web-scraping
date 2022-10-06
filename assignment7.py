@@ -13,7 +13,7 @@ descriptions = soup.find_all('h2', class_='Title_title__J34jc')
 
 #will contain info parsed from html
 item_names = []
-for i in descriptions: 
+for i in descriptions:
     print (i.text)
     items = i.text
     ## clean name remove whitespace
