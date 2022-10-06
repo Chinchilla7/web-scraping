@@ -25,9 +25,9 @@ for t in ranking:
 
 #check number of items
 len(bear_names)
-
+bear_names
 
 ## put this together into a dataframe
 df = pd.DataFrame({'bears':bear_names})
 
-df.to_csv()
+df.to_csv('data/bears_list')
